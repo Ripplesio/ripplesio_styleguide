@@ -1,5 +1,12 @@
 body{
-	padding: 1em
+	padding: 1em;
+
+	> div{
+		margin-top: 2em;
+		padding-bottom: 2em;
+		float: left;
+		width: 100%;
+	}
 }
 
 $color-1: #FF7806;
@@ -8,7 +15,10 @@ $color-3: #45D1B0;
 $color-4: #f83b55;
 
 
-
+h1.black{
+	padding: 1em;
+	background-color: #000;
+}
 
 .colors{
 
