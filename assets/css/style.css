@@ -359,7 +359,7 @@ body {
 
 .colors .block {
   width: 25%;
-  height: 12em;
+  height: 18em;
   float: left; }
   .colors .block:nth-child(1) {
     background: #ff7806; }
@@ -369,6 +369,46 @@ body {
     background: #45d1b0; }
   .colors .block:nth-child(4) {
     background: #f83b55; }
+  .colors .block .logo {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: 2;
+    transform: scale(4) translateY(1.3em) translateX(23%);
+    margin: auto; }
+    .colors .block .logo .ripple {
+      border-radius: 36%;
+      transform: rotate(45deg);
+      position: absolute;
+      opacity: 1;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition: background .2s;
+      background: rgba(255, 255, 255, 0.2); }
+      .colors .block .logo .ripple:nth-of-type(1) {
+        width: 8px;
+        height: 8px; }
+      .colors .block .logo .ripple:nth-of-type(2) {
+        width: 16px;
+        height: 16px;
+        transition: background .2s .1s; }
+      .colors .block .logo .ripple:nth-of-type(3) {
+        width: 24px;
+        height: 24px;
+        transition: background .2s .2s; }
+      .colors .block .logo .ripple:nth-of-type(4) {
+        width: 32px;
+        height: 32px;
+        transition: background .2s .3s; }
+  .colors .block:after {
+    content: attr(data-color);
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding: 2em 0; }
 
 body {
   font-family: 'Lato', 'helvetica neue', 'helvetica', sans-serif; }
