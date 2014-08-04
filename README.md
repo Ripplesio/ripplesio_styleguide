@@ -1,4 +1,4 @@
 ripplesio_styleguide
 ====================
 
-STyleguides of ripples.io
+Styleguides of ripples.io
