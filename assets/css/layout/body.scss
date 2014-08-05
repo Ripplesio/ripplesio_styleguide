@@ -5,8 +5,49 @@ body{
   background: #FFF;
   color: black;
 
-  font-family:'Montserrat' Helvetica, sans-serif;
+  font-family:'ProximaNova-Regular' Helvetica, sans-serif;
   font-weight: 300;
+
+  p{
+      font-family:'ProximaNova-Light' Helvetica, sans-serif;
+
+  }
 }
 
+.headings{
+  text-align: center;
+  width: 100%;
+  padding: 1em;
+  float: left;
+}
 
+.btn{
+
+  &.btn-flat{
+    color: #333;
+    padding: 1em;
+    border: 1px solid;
+    border-radius: 4px;
+
+    &:hover{
+      color: #fff;
+      background-color: #333;
+    }
+  }
+}
+
+.separator{
+
+position: relative;
+margin: 2rem 0 0  0;
+padding: 4rem 0;
+border-top: #EBF2F6 2px solid;
+border-bottom: #efefef 1px solid;
+font-family: 'ProximaNova-Regular',Open Sans, sans-serif;
+font-size: 1.3rem;
+line-height: 1.7em;
+color: #BBC7CC;
+text-align: center;
+background: #F7FAFB;
+float: left;
+}
