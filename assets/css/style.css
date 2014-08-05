@@ -361,7 +361,9 @@ th {
 
 html, body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  color: #333;
+  text-align: center; }
   html > div, body > div {
     margin-top: 2em;
     padding-bottom: 2em;
@@ -413,6 +415,7 @@ html, body {
   min-height: 320px; }
   .card .head-card {
     text-align: center;
+    color: #333;
     width: 100%;
     float: left; }
     .card .head-card h1 {
@@ -420,9 +423,11 @@ html, body {
       margin-bottom: 1em;
       border-bottom: 2px solid;
       margin: 0 auto 2em;
-      width: 300px;
+      max-width: 320px;
+      width: auto;
       display: block;
-      float: none; }
+      float: none;
+      text-transform: uppercase; }
   .card p {
     padding: 1em; }
 
@@ -445,7 +450,7 @@ html, body {
 
 h1.black {
   padding: 1em;
-  background-color: #000; }
+  background-color: #333; }
 
 .colors {
   width: 100%;

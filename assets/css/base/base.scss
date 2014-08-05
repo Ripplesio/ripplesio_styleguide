@@ -6,6 +6,8 @@
 html,body{
 	padding: 0;
 	margin: 0;
+	color: #333;
+	text-align: center;
 
 	> div{
 		margin-top: 2em;
@@ -76,15 +78,19 @@ $color-4: #f83b55;
 
 	.head-card{
 		text-align: center;
+		color: #333;
 
 		h1{
 			padding: 1em 1em;
 			margin-bottom: 1em;
 			border-bottom: 2px solid;
 			margin: 0 auto 2em;
-			width: 300px;
+			max-width: 320px;
+			width: auto;
 			display: block;
 			float: none;
+						text-transform: uppercase;
+
 		}
 		width: 100%;
 		float: left;
@@ -124,7 +130,7 @@ $color-4: #f83b55;
 
 h1.black{
 	padding: 1em;
-	background-color: #000;
+	background-color: #333;
 }
 
 .colors{
