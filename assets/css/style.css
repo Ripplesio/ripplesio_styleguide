@@ -4,6 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -354,6 +355,10 @@ td,
 th {
   padding: 0; }
 
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -678,6 +683,15 @@ body {
   width: 100%;
   padding: 1em;
   float: left; }
+
+.btn.btn-flat {
+  color: #333;
+  padding: 1em;
+  border: 1px solid;
+  border-radius: 4px; }
+  .btn.btn-flat:hover {
+    color: #fff;
+    background-color: #333; }
 
 .separator {
   position: relative;

@@ -21,6 +21,20 @@ body{
   float: left;
 }
 
+.btn{
+
+  &.btn-flat{
+    color: #333;
+    padding: 1em;
+    border: 1px solid;
+    border-radius: 4px;
+
+    &:hover{
+      color: #fff;
+      background-color: #333;
+    }
+  }
+}
 
 .separator{
 
