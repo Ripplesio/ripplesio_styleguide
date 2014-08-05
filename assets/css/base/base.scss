@@ -1,5 +1,11 @@
-body{
-	padding: 1em;
+@import 'bourbon/_bourbon';
+
+*{
+	@include box-sizing(border-box);
+}
+html,body{
+	padding: 0;
+	margin: 0;
 
 	> div{
 		margin-top: 2em;
@@ -15,12 +21,116 @@ $color-3: #45D1B0;
 $color-4: #f83b55;
 
 
+
+// Header
+.header{
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 320px;
+	background:$color-1 url(../images/background2.png)no-repeat center center;
+	text-align: center;
+	float: left;
+	margin: 0;
+
+	.inner{
+		width: 100%;
+		height: 320px;
+		line-height: 160px;
+
+		h1,h2{
+			color: #fff;
+			opacity: .9;
+			text-shadow: 1px 1px 0 rgba(black, .6);
+
+			a{color: #fff}
+		}
+		h1{
+			span{
+				color: transparent;
+				letter-spacing: 0;
+				text-shadow: 0 0 0;
+
+				background:url(../../brand_assets/logo_ripples_font_white.svg)no-repeat center center;
+				background-size: contain;
+				display: inline-block;
+				line-height: 2.5;
+
+				width: 120px;
+				height: 44px;
+				@include transform(scale(1.1) translateY(.45em) translateX(-.5em));
+			}
+		}
+		h2{
+			line-height: 0;
+		}
+	}
+}
+
+.card{
+	width: 100%;
+	padding-bottom: 2em;
+	float: left;
+	height: 100%;
+	min-height: 320px;
+
+	.head-card{
+		text-align: center;
+
+		h1{
+			padding: 1em 1em;
+			margin-bottom: 1em;
+			border-bottom: 2px solid;
+			margin: 0 auto 2em;
+			width: 300px;
+			display: block;
+			float: none;
+		}
+		width: 100%;
+		float: left;
+	}
+
+	p{
+		padding: 1em;
+	}
+}
+
+// Logo grid
+.logo-grid{
+	width: 80%;
+	margin: auto;
+
+	.item{
+		float: left;
+		width: 30%;
+		margin: 0;
+		padding: 1em;
+		border-radius: 3px;
+		border: 1px solid #efefef;
+
+		img{
+			width: 100%;
+		}
+
+		&:not(:first-child){
+			margin-left: 3%
+		}
+
+		&.dark-background{
+			background: #333;
+		}
+	}
+}
+
 h1.black{
 	padding: 1em;
 	background-color: #000;
 }
 
 .colors{
+	width: 100%;
+	float: left;
+	min-height: 320px;
 
 		.block{
 
@@ -48,7 +158,7 @@ h1.black{
 			position: absolute;
 			z-index: 2;
 
-				transform: scale(4) translateY(1.3em) translateX(23%);
+			transform: scale(4) translateY(1.3em) translateX(23%);
 
 			margin: auto;
 
@@ -85,14 +195,34 @@ h1.black{
 					transition: background .2s .3s;
 				}
 			}
-		}
 
 		&:after{
-			content:attr(data-color);
+			content: attr(data-name);
 			color: #fff;
 			text-align: center;
 			display: block;
 			padding: 2em 0;
+			position: relative;
+			top: 6em;
+			font-size: .65em;
+			}
+		}
+
+		&:after{
+			content: attr(data-color);
+			color: #fff;
+			text-align: center;
+			display: block;
+			padding: 1em 0;
+			font-size: 1.6em;
+			margin-left: -.9em;
 		}
 	}
+}
+
+
+.fonts{
+	min-height: 320px;
+	float: left;
+	width: 100%;
 }
